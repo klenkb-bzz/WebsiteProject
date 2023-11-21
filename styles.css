@@ -1,3 +1,36 @@
+.carousel-container-own {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-own {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-own {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
 #Nav-Container > div{
     padding-left:80px;
     padding-right:80px;
