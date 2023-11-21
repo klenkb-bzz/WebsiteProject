@@ -35,3 +35,7 @@
     padding-left:80px;
     padding-right:80px;
 }
+
+.dropdown-item{
+    color: rgb(52,88,176);
+}

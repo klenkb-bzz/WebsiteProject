@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
   <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='styles.css'>
 </head>
-<body>
+<body class="bg-white">
+<!-- Anfang Nav-->
 <header>
-  <nav>Navigation</nav>
+  <div style="background-color: rgb(52,88,176)" class='nav justify-content-center nav-pills' id='Nav-Container'>
+    <div class='nav-item' id='Nav-Item-Hompage'>
+      <a class='nav-link text-white' href='index.html' style='text-decoration: none;'>Homepage</a> <!-- Entweder Icon oder Homepagelink...-->
+    </div>
+    <div class='nav-item' id='Nav-Item-Tencent'>
+      <a class='nav-link text-white' href='tencent.html' style='text-decoration: none;'>Tencent</a>
+    </div>
+    <div class='nav-item' id='Nav-Item-Monopoly'>
+      <a class='nav-link active text-white' href='monopoly.html' style='text-decoration: none;'>Monopol</a>
+    </div>
+    <div class='nav-item' id='Nav-Item-Effects'>
+      <a class='nav-link text-white' href='effects.html' style='text-decoration: none;'>Folgen</a>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style='background-color: transparent; border-color: transparent'>
+        Sprachen
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Englisch <img src='img/UK.jpg' height="17.5" width="25.5" class='float-end' alt='UK Flag'/></a></li>
+        <li><a class="dropdown-item" href="#">Deutsch <img src='img/Germany.jpg' height="17.5" width="25.5" class='float-end' alt='French Flag'/></a></li>
+        <li><a class="dropdown-item" href="#">Französisch <img src='img/france.png' height="17.5" width="25.5" class='float-end' alt='French Flag'/></a></li>
+        <li><a class="dropdown-item" href="#">Italienisch <img src='img/Italy.jpg' height="17.5" width="25.5" class='float-end' alt='Italian Flag'/></a></li>
+      </ul>
+    </div>
+  </div>
 </header>
-
-<main>
-
-</main>
-
-<footer>Footer</footer>
+<!-- Ende Nav-->
+<footer>
 
 
+</footer>
 </body>
 </html>
