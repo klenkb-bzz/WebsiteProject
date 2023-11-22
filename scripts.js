@@ -1,28 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let currentSlide = 0;
-    const totalItems = document.querySelectorAll(".carousel-item-own").length;
+    let slideIndex = 0;
+    carousel();
 
-    function showSlide(index) {
-        const carousel = document.querySelector(".carousel-own");
-        const itemWidth = document.querySelector(".carousel-item-own").clientWidth;
-        const newPosition = -index * itemWidth;
-
-        if (index < 0) {
-            currentSlide = totalItems - 1;
-        } else if (index >= totalItems) {
-            currentSlide = 0;
-        } else {
-            currentSlide = index
+    function carousel() {
+        let x = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
         }
-
-        carousel.style.transform = `translateX(${newPosition}px)`;
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
     }
-
-    function prevSlide() {
-        showSlide(currentSlide - 1)
-    }
-
-    function nextSlide() {
-        showSlide(currentSlide + 1)
-    }
-})
+});

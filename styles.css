@@ -1,34 +1,36 @@
-.carousel-container-own {
-    position: relative;
-    width: 80%;
-    margin: auto;
+body, html {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.carousel-own {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.slideshow-container-own {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
 }
 
-.carousel-item-own {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.control-btn {
+.mySlides {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
+    animation: slideAnimation 1s ease-in-out;
 }
 
-.prev-btn {
-    left: 10px;
+@keyframes slideAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
-.next-btn {
-    right: 10px;
+img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
 
 #Nav-Container > div{
