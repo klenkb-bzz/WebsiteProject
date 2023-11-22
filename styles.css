@@ -16,3 +16,8 @@
     direction:ltr;
     padding-left:11rem !important;
 }
+
+#Footer-Container > div{
+    padding-left:30px;
+    padding-right:30px;
+}
