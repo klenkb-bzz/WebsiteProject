@@ -39,3 +39,13 @@
 .dropdown-item{
     color: rgb(52,88,176);
 }
+
+.pe-6 {
+    direction:rtl;
+    padding-right:11rem !important;
+}
+
+.ps-6 {
+    direction:ltr;
+    padding-left:11rem !important;
+}
