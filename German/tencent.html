@@ -12,31 +12,40 @@
 <body class="bg-white">
 <!-- Anfang Nav-->
 <header>
-  <div style="background-color: rgb(52,88,176)" class='nav fixed-top justify-content-center nav-pills' id='Nav-Container'>
-    <div class='nav-item' id='Nav-Item-Hompage' style='margin-right: auto'>
-      <a class='nav-link text-white' href='index.html' style='text-decoration: none;'>Homepage</a> <!-- Entweder Icon oder Homepagelink...-->
-    </div>
-    <div class='nav-item' id='Nav-Item-Tencent'>
-      <a class='nav-link active text-white' href='tencent.html' style='text-decoration: none;'>Tencent</a>
-    </div>
-    <div class='nav-item' id='Nav-Item-Monopoly'>
-      <a class='nav-link text-white' href='monopoly.html' style='text-decoration: none;'>Monopol</a>
-    </div>
-    <div class='nav-item' id='Nav-Item-Effects'>
-      <a class='nav-link text-white' href='effects.html' style='text-decoration: none;'>Folgen</a>
-    </div>
-    <div class="dropdown" style='margin-left: auto;'>
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style='background-color: transparent; border-color: transparent'>
-        Sprachen
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(52, 88, 176); padding: 15px;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Homepage</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Englisch <img src='../img/UK.jpg' style="height:17.5px; width:25.5px" class='float-end' alt='UK Flag'/></a></li>
-        <li><a class="dropdown-item" href="#">Deutsch <img src='../img/Germany.jpg' style="height:17.5px; width:25.5px" class='float-end' alt='French Flag'/></a></li>
-        <li><a class="dropdown-item" href="#">Französisch <img src='../img/france.png' style="height:17.5px; width:25.5px" class='float-end' alt='French Flag'/></a></li>
-        <li><a class="dropdown-item" href="#">Italienisch <img src='../img/Italy.jpg' style="height:17.5px; width:25.5px" class='float-end' alt='Italian Flag'/></a></li>
-      </ul>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="tencent.html">Tencent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="monopoly.html">Monopol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="effects.html">Folgen</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sprachen
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Englisch <img src="../img/UK.jpg" class="float-end" alt="UK Flag" style="height: 17.5px; width: 25.5px;"></a></li>
+              <li><a class="dropdown-item active" href="index.html">Deutsch <img src="../img/Germany.jpg" class="float-end" alt="Deutschland Flag" style="height: 17.5px; width: 25.5px;"></a></li>
+              <li><a class="dropdown-item" href="../French/index_french.html">Französisch <img src="../img/france.png" class="float-end" alt="Französische Flagge" style="height: 17.5px; width: 25.5px;"></a></li>
+              <li><a class="dropdown-item" href="#">Italienisch <img src="../img/Italy.jpg" class="float-end" alt="Italienische Flagge" style="height: 17.5px; width: 25.5px;"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
 </header>
 
 <div class="container-ben" >
