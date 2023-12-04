@@ -75,3 +75,20 @@ ul.timeline-3 > li:before {
     padding-left:30px;
     padding-right:30px;
 }
+
+/*iPhone-Screen */
+@media only screen and (max-width: 400px) {
+    .carousel-inner {
+        display: none;
+    }
+
+}
+
+/*iPad-Screen */
+@media only screen and (max-width: 850px) {
+    .carousel-inner {
+        display: block;
+        height: 30vh;
+    }
+
+}
