@@ -4,7 +4,6 @@
 }
 
 
-
 .carousel-caption-ben {
     margin: 0;
     padding: 0;
@@ -76,11 +75,42 @@ ul.timeline-3 > li:before {
     padding-right:30px;
 }
 
+#moreContentButton {
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(135,138,143,0.8);
+}
+
 /*iPhone-Screen */
 @media only screen and (max-width: 400px) {
+    #title-index{
+        padding: 0 !important;
+        padding-bottom: 30px !important;
+    }
+
+
+    body #second-point{
+        margin-bottom: 0rem !important;
+    }
+
     .carousel-inner {
+        display: none !important;
+    }
+
+    .additional-year {
         display: none;
     }
+
+    #moreContentButton {
+        display: block;
+    }
+
+    body #initial-text {
+        padding-top: 0rem !important;
+    }
+
+
 
 }
 
@@ -89,6 +119,15 @@ ul.timeline-3 > li:before {
     .carousel-inner {
         display: block;
         height: 30vh;
+    }
+
+    #initial-text {
+        padding-top: 0;
+    }
+
+    #1-point {
+        margin: 0;
+        margin-bottom: 1rem;
     }
 
 }
