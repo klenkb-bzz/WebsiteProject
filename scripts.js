@@ -10,3 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
         moreContentButton.innerText = moreContentButton.innerText === "Mehr anzeigen" ? "Weniger anzeigen" : "Mehr anzeigen";
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    let moreCorpsButton = document.getElementById("additional-corp-button")
+    moreCorpsButton.addEventListener("mousedown", () => {
+        let moreCorps = document.querySelectorAll(".additional-corp");
+        moreCorps.forEach(function(corp) {
+            corp.style.display = corp.style.display === "none" || corp.style.display === "" ? "table-row" : "none";
+        });
+        moreCorpsButton.innerText = moreCorpsButton.innerText === "Mehr anzeigen" ? "Weniger anzeigen" : "Mehr anzeigen";
+    })
+});

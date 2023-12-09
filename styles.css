@@ -82,6 +82,23 @@ ul.timeline-3 > li:before {
     color: rgba(135,138,143,0.8);
 }
 
+.additional-corp {
+    display: none;
+}
+
+#additional-corp-button {
+
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 8px 16px;
+        border: none;
+        background-color: transparent;
+        border-radius: 1px;
+        cursor: pointer;
+
+}
+
 /*iPhone-Screen */
 @media only screen and (max-width: 400px) {
     #title-index{
