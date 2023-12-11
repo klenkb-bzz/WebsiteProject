@@ -3,7 +3,10 @@
     padding-right:80px;
 }
 
-
+.navbar-brand {
+    height: 6%;
+    width: 6%;
+}
 .carousel-caption-ben {
     margin: 0;
     padding: 0;
